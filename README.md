@@ -1,2 +1,2 @@
 # Shop
-An example of a shop.
+An example of the home page of a shop.
