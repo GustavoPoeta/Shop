@@ -18,6 +18,9 @@ header {
     height: 13vh;
     box-shadow: 0px 3px 10px #EF233C;
     border-radius: 0px 0px 30px 30px;
+    position: fixed;
+    background-color: white;
+    z-index: 5000;
 }
 
 #navList {
@@ -41,7 +44,7 @@ header {
 .underline {
     width: 1px;
     background-color: #D80032;
-    transition: all 300ms linear;
+    transition: all 290ms linear;
     position: absolute;
     border-top-right-radius: 15px;
 }
@@ -60,4 +63,63 @@ header {
 
 #cartIcon, #pfpIcon:hover {
     cursor: pointer;
+}
+
+
+
+
+#home {
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.parallaxElement {
+    position: absolute;
+    transition: transform 0.1s ease-out;
+}
+
+#homeWelcome {
+    width: 100%;
+    height: 155%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeShop {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 40px;
+    user-select: none;
+    right: 40%;
+}
+
+#homeLogo {
+    width: 100px;
+    height: 100px;
+    filter: invert(22%) sepia(69%) saturate(5963%) hue-rotate(343deg) brightness(98%) contrast(91%);
+    left: 40%;
+}
+
+#homeText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 150%;
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-cluster;
+    border-top: 2px solid #EF233C;
 }
